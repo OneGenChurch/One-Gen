@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Generation Church</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --main-color: #df2d4b;
+      --bg-light: #f7f7f7;
+      --text-dark: #222;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.2rem;
+      color: var(--main-color);
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x900/?church') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    .section {
+      padding: 50px 20px;
+    }
+
+    .section h3 {
+      font-size: 1.6rem;
+      color: var(--main-color);
+      margin-bottom: 20px;
+    }
+
+    .ministries,
+    .gallery {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+
+    .card {
+      background: var(--bg-light);
+      padding: 20px;
+      min-width: 200px;
+      border-radius: 8px;
+      scroll-snap-align: start;
+    }
+
+    .testimonials blockquote {
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      background: var(--main-color);
+      color: white;
+      padding: 10px 20px;
+      margin-right: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer .social a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        margin-left: 10px;
+        font-size: 0.9rem;
+      }
+
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>One Generation</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Gallery</a>
+      <a href="#">Store</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>One Generation Church</h2>
+    <p>Raising up a generation of faith</p>
+  </section>
+
+  <section class="section about">
+    <h3>Welcome</h3>
+    <p>We are a community of believers committed to spreading love, faith, and purpose across generations.</p>
+  </section>
+
+  <section class="section ministries">
+    <h3>Ministries</h3>
+    <div class="ministries">
+      <div class="card">Youth Ministry</div>
+      <div class="card">Worship Team</div>
+      <div class="card">Community Outreach</div>
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <h3>Testimonials</h3>
+    <blockquote>“This church changed my life.” – Sarah</blockquote>
+    <blockquote>“Feels like family every Sunday.” – James</blockquote>
+  </section>
+
+  <section class="section gallery">
+    <h3>Gallery</h3>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/300x200/?worship" width="200" />
+      <img src="https://source.unsplash.com/300x200/?bible" width="200" />
+      <img src="https://source.unsplash.com/300x200/?church" width="200" />
+    </div>
+  </section>
+
+  <section class="section store">
+    <h3>Support the Mission</h3>
+    <div class="buttons">
+      <a href="#">Shop Merch</a>
+      <a href="#">Give Online</a>
+    </div>
+  </section>
+
+  <section class="section contact">
+    <h3>Contact Us</h3>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea rows="4" placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 One Generation Church</p>
+    <div class="social">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">YouTube</a>
+    </div>
+  </footer>
+
+</body>
+</html>
